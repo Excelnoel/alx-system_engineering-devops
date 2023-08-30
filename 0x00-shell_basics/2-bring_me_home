@@ -1,3 +1,2 @@
 #!/bin/bash
-# Change working directory to user's home directory
 cd ~
