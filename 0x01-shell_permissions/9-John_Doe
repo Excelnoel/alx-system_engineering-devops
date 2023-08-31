@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l hello
+stat -c "%A %U %G %s %x hello"
