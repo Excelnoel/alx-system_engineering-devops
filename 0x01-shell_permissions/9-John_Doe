@@ -1,2 +1,2 @@
 #!/bin/bash
-stat -c "%A %U %G %s %x hello"
+chmod 753 hello
