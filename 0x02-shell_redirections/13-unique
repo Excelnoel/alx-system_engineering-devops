@@ -1,2 +1,2 @@
 #!/bin/bash
-cat your_input_file.txt | python find_unique_words.py
+sort | uniq -u
