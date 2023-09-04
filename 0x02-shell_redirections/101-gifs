@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname *.gif -exec bash -c echo /bin/bash {} \; | LC_ALL=C sort
