@@ -1,2 +1,2 @@
 #!/bin/bash
-sort input.txt | uniq -c | awk  == 1 {print }
+echo -e "#!/usr/bin/env python3\nimport sys\ncounter = {}\nfor line in sys.stdin:\n    word = line.strip()\n    if word in counter:\n        counter[word] += 1\n    else:\n        counter[word] = 1\nfor word, count in sorted(counter.items()):\n    if count == 1:\n        print(word)" > find_unique_words.py
