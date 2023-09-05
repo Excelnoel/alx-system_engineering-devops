@@ -1,2 +1,2 @@
 #!/bin/bash
-awk {printf } your_acrostic_file && echo
+>>echo -ne $(cut -c-1 | tr -d '\n')'\n'
