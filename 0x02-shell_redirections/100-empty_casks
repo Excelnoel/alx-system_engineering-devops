@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -printf %fn && find . -type f -empty -printf %fn
+>> find . -empty -printf "%f\n"
