@@ -41,7 +41,7 @@ frontend exceltronics-frontend
         default_backend exceltronics-backend
 
 frontend exceltronics-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/exceltronics.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.exceltronics.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend exceltronics-backend
 
