@@ -47,5 +47,5 @@ frontend exceltronics-frontend-https
 
 backend exceltronics-backend
         balance roundrobin
-        server 151666-web-01 54.160.127.80:80 check
-        server 151666-web-02 54.90.21.64:80 check
+        server 520699-web-01 54.160.127.80:80 check
+        server 520699-web-02 54.90.21.64:80 check
