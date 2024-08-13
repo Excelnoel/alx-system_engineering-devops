@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+"""A functin that queries the Reddit API and returns the number of subscribers"""
+
+import requests
+
+def number_of_subscribers (subreddit):
+    """returns the number of subscribers"""
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    headers = {
+            "Users-Agent": "linux:0x16.api.advance:v1.0.0 (by /u/bdoy_)"
+            }
+    response = requests.get(url, headers=headers, allow_redirects=False)
+    if response.status_code ==404:
+        return 0
+    results = response.json().get("data")
+    return results.get("subscribers")
